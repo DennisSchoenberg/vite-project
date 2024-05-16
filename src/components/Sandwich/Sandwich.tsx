@@ -30,7 +30,7 @@ export default function Sandwich(): JSX.Element {
   return (
     <div className={style.container}>
       <h2>Sandwich</h2>
-      <img src="https://img.razrisyika.ru/kart/130/1200/516264-sendvich-37.jpg" alt="" />
+      <img src="https://img.razrisyika.ru/kart/130/1200/516264-sendvich-37.jpg" alt="" className={style.image} />
       <p>{sandwich}</p>
       <div className={style.btnContainer}>
         <button type="button" className={style.btn} onClick={handleAddBread}>
