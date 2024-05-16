@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import style from './ProductPage.module.css'
 import Product from '../Products/types/Product'
 import {Link, useParams} from 'react-router-dom'
@@ -13,7 +13,8 @@ async function fetchProduct():Promise<void>{
 }
 useEffect(()=>{
   fetchProduct();
-},[productId])
+// eslint-disable-next-line react-hooks/exhaustive-deps
+},[])
 
   return (
     <div>
